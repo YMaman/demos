@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<!--suppress JSUnresolvedLibraryURL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bot platform</title>
+    <link rel="stylesheet" type="text/css" href="../chat_css/vendor-1.1.82.css"/>
+    <link rel="stylesheet" type="text/css" href="../chat_css/ad-1.1.82.min.css"/>
+
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="../chat_css/plugin-ie-1.1.82.min.css" />
+    <![endif]-->
+    <script>
+        if (typeof Element.prototype.addEventListener === 'undefined') {
+            Element.prototype.addEventListener = function (e, callback) {
+                e = 'on' + e;
+                return this.attachEvent(e, callback);
+            };
+        }
+        window.botPayload = '';
+        window.bot_name = 'bot_1507187348792';
+        window.origin = 'https://botplatform.io';
+        window.ad = true;
+        window.skin = 'mobile';
+        window.init_message = '';
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        window.app_domain = "botplatform.io";
+        window.bots_url = "botplatform.io/bots";
+        window.bosh_url = 'botplatform.io';
+        window.xmpp_domain = 'xmpp.yellowmssngr.com';
+        window.scheme = 'https:';
+        window.trigger = '';
+        window.staticPath = "../";
+
+    </script>
+    <script src="../chat_js/vendor-1.1.82.js"></script>
+
+    <style>
+        
+
+        #chatDetails img.secondary{
+            float: none !important;
+            right: 20px !important;
+            top: 5px !important;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+
+<div id="chatContainer" class="container" style="display: none;">
+    <div>
+        <div id="chatDetails" class="">
+            
+                <img class="icon" src="/chat/chat_images/chat.svg"/>
+            
+            <div class="title">Chat with us!</div>
+            <div class="sub-title"></div>
+        </div>
+        <div class="chat-background title" id="player"></div>
+        <div id="chatBoxMainContainer" class="title  start">
+            <div class="resizable-container">
+                <div class="welcome-message hide welcome-message-ad"><div></div></div>
+                <div id="chatBoxMain" class="row"></div>
+                <div id="chatOptions"></div>
+                <img id="typing" src="https://bpvault.blob.core.windows.net/icons/icon-is-typing.gif" style="display: none;" />
+                <div class="floating-input-support"></div>
+            </div>
+        </div>
+    </div>
+    <div class="floating-input hide">
+        <div class="floating-input-div">
+            <input type="text" class="input auto-complete" placeholder="Type here ...">
+            <div class="input-actions">
+                <i class="fa fa-send send hide"></i>
+                <i class="fa fa-microphone"></i>
+                <i class="fa fa-home hide"></i>
+                <i class="fa fa-paperclip attach"><form id="fileForm" action="../upload" method="post" enctype="multipart/form-data" target="upload_target" >
+                        <input type="file" name="images"  id="chatFile"/>
+                    </form></i>
+            </div>
+        </div>
+    </div>
+    
+        <div class="send-input">
+            <form id="ymChatForm">
+                <input class="form-control input-lg input auto-complete" id ="ymMsgInput" type="text" placeholder="Type your message ..." autocomplete="off" />
+            </form>
+            <ul class="language-menu hide">
+                <li class="EN">English</li>
+                <li class="HI">हिंदी</li>
+                <li class="TE">తెలుగు</li>
+                <li class="KA">ಕನ್ನಡ</li>
+                <li class="FR">French</li>
+                <li class="CN">Chinese</li>
+            </ul>
+            <div class="input-actions">
+                <i class="fa fa-send send hide"></i>
+                <i class="fa fa-microphone"></i>
+                <i class="fa fa-home hide"></i>
+                <i class="fa fa-paperclip attach"><form id="fileForm" action="../upload" method="post" enctype="multipart/form-data" target="upload_target" >
+                        <input type="file" name="images"  id="chatFile"/>
+                    </form></i>
+            </div>
+        </div>
+    
+</div>
+
+<audio id="audio" class="hide" src=""></audio>
+<audio id="alert" class="hide" src="../chat_images/notify.mp3"></audio>
+<iframe id="upload_target" name="upload_target" style="width:0;height:0;border:0px solid #fff;"></iframe>
+</body>
+</html>
